@@ -188,9 +188,11 @@ void clean_list(list_t *list)
         index = list->head;
         list->head = list->head->next;
         free(index);
+        index = NULL;
 
     }
     free(list);
+    list = NULL;
 
 }
  
